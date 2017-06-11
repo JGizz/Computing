@@ -1,4 +1,4 @@
-//CLASS
+// OBJECT TEMPLATE
 
 class Bus {
     contructor (name, stops, colour, monFriTimes, friTimes) {
@@ -13,21 +13,25 @@ class Bus {
     }
 }
 
-var milson = new Bus ("Milson", milsonStops, '#f69238', milsonTimesMonFri, milsonTimesFri)
-var roslyn = new Bus ("Milson", roslynStops, '#f69238', roslynTimesMonFri, roslynTimesFri)
-var awapuni = new Bus ("Milson", awapuniStops, '#f69238', awapuniTimesMonFri, awapuniTimesFri)
-var rugby = new Bus ("Milson", rugbyStops, '#f69238', rugbyTimesMonFri, rugbyTimesFri)
-var rhodes = new Bus ("Milson", rhodesStops, '#f69238', rhodesTimesMonFri, rhodesTimesFri)
-var takaro = new Bus ("Milson", takaroStops, '#f69238', takaroTimesMonFri, takaroTimesFri)
-var highbury = new Bus ("Milson", highburyStops, '#f69238', highburyTimesMonFri, highburyTimesFri)
-var brightwater = new Bus ("Milson", brightwaterStops, '#f69238', brightwaterTimesMonFri, brightwaterTimesFri)
-var fernlea = new Bus ("Milson", fernleaStops, '#f69238', fernleaTimesMonFri, fernleaTimesFri)
-var heights = new Bus ("Milson", heightsStops, '#f69238', heightsTimesMonFri, heightsTimesFri)
+//
+
+var awapuni = new Bus ("Awapuni", awapuniStops, '#f79239', awapuniTimesMonFri, awapuniTimesFri)
+var rugby = new Bus ("Rugby", rugbyStops, '#009e58', rugbyTimesMonFri, rugbyTimesFri)
+var highbury = new Bus ("Highbury", highburyStops, '#00aeef', highburyTimesMonFri, highburyTimesFri)
+var takaro = new Bus ("Takaro", takaroStops, '#ed1b2f', takaroTimesMonFri, takaroTimesFri)
+var cloverlea = new Bus ("Cloverlea", cloverleaStops, '#883d97', cloverleaTimesMonFri, cloverleaTimesFri)
+var milson = new Bus ("Milson", milsonStops, '#ef59a1', milsonTimesMonFri, milsonTimesFri)
+var rhodes = new Bus ("Rhodes", rhodesStops, '#0053a0', rhodesTimesMonFri, rhodesTimesFri)
+var roslyn = new Bus ("Roslyn", roslynStops, '#c68812', roslynTimesMonFri, roslynTimesFri)
+var rangiora = new Bus ("Rangiora", rangioraStops, '#005140', rangioraTimesMonFri, rangioraTimesFri)
+var brightwater = new Bus ("Brightwater", brightwaterStops, '#fcb655', brightwaterTimesMonFri, brightwaterTimesFri)
+var fernlea = new Bus ("Fernlea", fernleaStops, '#008c99', fernleaTimesMonFri, fernleaTimesFri)
+var heights = new Bus ("Heights", heightsStops, '#f1573e', heightsTimesMonFri, heightsTimesFri)
 
 
 
 milson.getStops();
-//OBJECTS
+
 
 
 

@@ -6,14 +6,9 @@ class Bus {
         this.stops = stops;
         this.monFriTimes = monFriTimes;
     }
-
-    getStops() {
-        console.log("This function will get all stops" + this.name)
-        console.log(this.stops)
-    }
 }
 
-//
+// OBJECTS
 
 var awapuni = new Bus ("Awapuni", awapuniStops, '#f79239', awapuniTimesMonFri, awapuniTimesFri)
 var rugby = new Bus ("Rugby", rugbyStops, '#009e58', rugbyTimesMonFri, rugbyTimesFri)
@@ -29,15 +24,17 @@ var fernlea = new Bus ("Fernlea", fernleaStops, '#008c99', fernleaTimesMonFri, f
 var heights = new Bus ("Heights", heightsStops, '#f1573e', heightsTimesMonFri, heightsTimesFri)
 
 
-
-milson.getStops();
-
-
-
-
 //JQUERY STUFF
 $(document).ready(function(){
 
-
-
 });
+
+//var awapuniStops = awapuni.getStops();
+
+//console.log(awapuniStops);  //logs 20.97
+
+
+//    getStops() {
+//        console.log("This function will get all stops" + this.name)
+//        console.log(this.stops)
+//    }

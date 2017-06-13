@@ -40,6 +40,9 @@ $(document).ready(function(){
 
 });
 
+awapuniBus.onclick = function() {
+    console.log("WORKING")
+}
 //var awapuniStops = awapuni.getStops();
 
 //console.log(awapuniStops);  //logs 20.97

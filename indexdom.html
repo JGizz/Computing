@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>JS Test</title>
+
+    <style>
+        h1 {
+            font-family: calibri;
+            text-align: center;
+            color: whitesmoke;
+            text-shadow: 2px 2px #000000;
+        }
+
+        body {
+            background: #ED7B84;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .bus, .awapuniBus {
+            width: 100px;
+            height: 40px;
+            background-color: #97de36;
+            color: white;
+            font-family: Arial;
+            font-size: 23px;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .bus:hover, .awapuniBus:hover {
+            background-color: forestgreen;
+        }
+
+
+        .container {
+            display: flex;
+            width 100%;
+        }
+
+        .left, .right {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class='left'>
+    <h1 id="title">Javascript Testing</h1>
+
+    <div class='bus' id='awapuniBus'>Awapuni</div>
+    <div class='bus' id='highburyBus'>Highbury</div>
+    <div class='bus' id='cloverleaBus'>Cloverlea</div>
+    <div class='bus' id='rhodesBus'>Rhodes</div>
+    </div>
+
+        <div class='right'>
+            <h1 id="busTitle">Title</h1>
+            <h2 id="busStops">Stops</h2>
+            <h2 id="busTimes">Times</h2>
+    </div>
+
+
+    </div>
+
+   <!-- <button onclick='loadNew()'>See what I do</button> -->
+
+    <script src="app.js"></script>
+    <script src="bus-stops-and-times-final.js"></script>
+</body>
+</html>

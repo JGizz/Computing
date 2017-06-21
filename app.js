@@ -5,6 +5,7 @@ class Bus {
         this.name = name;
         this.stops = stops;
         this.monFriTimes = monFriTimes;
+        this.friTimes = friTimes;
     }
 }
 

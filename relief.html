@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <style type="text/css">
+      button{padding:30px 70px; display:block; width: 300px}
+      .container{display:flex}
+      .right{padding-left: 80px;width:800px}
+  </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="left">
+            <!--<button onclick="addContent(batman.name, batman.powers, batman.realName, batman.job)">Batman</button>
+            <button onclick="addContent(superman.name, superman.powers, superman.realName, superman.job)">Superman</button>
+            <button onclick="addContent(wonderWoman.name, wonderWoman.powers, wonderWoman.realName, wonderWoman.job)">Wonder Woman</button>
+            <button onclick="addContent(aquaman.name, aquaman.powers, aquaman.realName, aquaman.job)">Aquaman</button>
+            <button onclick="addContent(cyborg.name, cyborg.powers, cyborg.realName, cyborg.job)">Cyborg</button>
+            <button onclick="addContent(flash.name, flash.powers, flash.realName, flash.job)">The Flash</button> -->
+
+            <button onclick="batman.addContent()">Batman</button>
+            <button onclick="superman.addContent()">Superman</button>
+            <button onclick="wonderWoman.addContent()">Wonder Woman</button>
+            <button onclick="aquaman.addContent()">Aquaman</button>
+            <button onclick="cyborg.addContent()">Cyborg</button>
+            <button onclick="flash.addContent()">The Flash</button>
+        </div>
+        <div class="right">
+            <div>
+                <h1 id="name"></h1>
+                <h3 id="powers"></h3>
+                <h3 id="realName"></h3>
+                <h3 id="job"></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    //CLASS
+    class Superhero {
+        constructor (name, powers, realName, job) {
+            this.name = name;
+            this.powers = powers;
+            this.realName = realName;
+            this.job = job;
+            this.nameDOM = document.getElementById("name");
+            this.powersDOM = document.getElementById("powers");
+            this.realNameDOM = document.getElementById("realName");
+            this.jobDOM = document.getElementById("job");
+        }
+        addContent() {
+
+            this.nameDOM.innerHTML = this.name;
+            this.powersDOM.innerHTML = this.formatPowers();
+            this.realNameDOM.innerHTML = this.realName;
+            this.jobDOM.innerHTML = this.job;
+        }
+        formatPowers() {
+            var content = '<ul>';
+            for (var i = 0; i < this.powers.length; i++) {
+                content += '<li class="power">' + this.powers[i] + '</li>'
+            }
+            content += '</ul>'
+            return content
+        }
+
+    }
+
+    //OBJECTS
+    var superman = new Superhero ("Superman",["super strength", "flight", "invulnerability", "super speed", "heat vision", "freeze breath", "x-ray vision", "superhuman hearing", "healing factor"], ["Kal-El", "Clark Joseph Kent"], "Reporter");
+    var batman = new Superhero ("Batman", ["exceptional martial artist", "combat strategy", "inexhaustible wealth", "brilliant deductive skill", "advanced technology"],"Bruce Wayne", "CEO of Wayne Enterprises");
+    var wonderWoman = new Superhero ("Wonder Woman", ["super strength", "invulnerability", "flight", "combat skill", "combat strategy", "superhuman agility", "healing factor", "magic weaponry"], "Diana", "Amazon Princess");
+    var aquaman = new Superhero ("Aquaman", ["super strength", "durability", "control over sea life", "exceptional swimming ability", "ability to breathe underwater"], "Arthur Curry", "King of Atlantis");
+    var cyborg = new Superhero ("Cyborg", ["super strength", "advanced technology", "instant weaponry", "genius-level intellect", "control over technology", "computer hacking", "durability", "teleportation"], "Victor 'Vic' Stone",  "Former student");
+    var flash = new Superhero ("The Flash", ["super speed", "intangibility", "superhuman agility"], "Barry Allen", "Forensic scientist");
+
+
+    //DOM
+//    var nameDOM = document.getElementById("name");
+  //  var powersDOM = document.getElementById("powers");
+  //  var realNameDOM = document.getElementById("realName");
+  //  var jobDOM = document.getElementById("job");
+
+
+    //FUNCTIONS
+     //function addContent(name, power, realName, job) {
+            //alert('I am ' + name)
+      //  nameDOM.innerHTML = name;
+     //   powersDOM.innerHTML = power;
+     //   realNameDOM.innerHTML = realName;
+    //    jobDOM.innerHTML = job;
+  //  }
+
+   // function addContent(objName) {
+            //alert('I am ' + name)
+      //  nameDOM.innerHTML = objName.name;
+      //  powersDOM.innerHTML = objName.powers;
+      //  realNameDOM.innerHTML = objName.realName;
+       // jobDOM.innerHTML = objName.job;
+  //  }
+
+
+    //================ CHALLENGES ===========================
+
+    //  1: When the buttons are clicked, addContent() is triggered. This function should add the content of the object into the DOM elements
+    //      Hint: onclick="addContent(batman.name,batman.powers,batman.realName,batman.job)
+
+    //  2: This will quickly get messy. Try to DRY up this code (aka Don't Repeat Yourself). Try to rewrite this function into the Class.
+    //      Hint: this.name, this.powers, this.realName, this.job
+
+    //  3: How else can you make this program more efficient?
+
+    //  4: Apply the ideas from this code to your Assessment Bus App
+
+    //=======================================================
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

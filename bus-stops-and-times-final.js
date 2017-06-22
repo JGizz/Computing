@@ -84,7 +84,7 @@ var highburyStops = ["Depart MST",
                "OT Reserve Pembroke St",
                "Havelock Ave",
                "Botanical Rd",
-               "Feasterton St",
+               "Featherston St",
                "Arrive MST"
               ];
 var highburyTimesMonFri = [

@@ -6,7 +6,17 @@
   <style type="text/css">
       button{padding:30px 70px; display:block; width: 300px}
       .container{display:flex}
-      .right{padding-left: 80px;width:800px}
+      .right{padding-left: 80px;width:50%}
+      .left{width:50%}
+      #map {
+        height: 500px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
   </style>
   </head>
   <body>
@@ -14,15 +24,24 @@
         <div class="left">
             <button onclick="milson.addContent()">Milson</button>
             <button onclick="awapuni.addContent()">Awapuni</button>
+            <button onclick="highbury.addContent()">Highbury</button>
         </div>
         <div class="right">
-            <div>
-                <h1 id="name"></h1>
-                <h3 id="powers"></h3>
-                <h3 id="realName"></h3>
-                <h3 id="job"></h3>
-            </div>
-        </div>
+            <div id=map></div>
+            <script>
+
+    var theSquare = {lat: -40.356301, lng: }
+      var map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -40.3523, lng: 175.6082},
+          zoom: 13
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT-SmT-h8lj3A7BTrpg3JgOUX-Qjc7JMY&callback=initMap"
+    async defer></script>
     </div>
 
     <script>
@@ -109,6 +128,32 @@
                 "Rugby Street",
                 "Ferguson Street",
                 "Arrive MST"], [
+                      [6.40, 6.46, 6.49, 6.52, 6.55, 6.59, 7.04, 7.09, 7.15],
+				[7.20, 7.26, 7.29, 7.32, 7.35, 7.39, 7.44, 7.49, 7.55],
+				[8.00, 8.06, 8.09, 8.12, 8.15, 8.19, 8.24, 8.29, 8.35],
+                [8.40, 8.46, 8.49, 8.52, 8.55, 8.59, 9.04, 9.09, 9.15],
+  				[9.40, 9.46, 9.49, 9.52, 9.55, 9.59, 10.04, 10.09, 10.15],
+  				[11.00, 11.06, 11.09, 11.12, 11.15, 11.19, 11.24, 11.29, 11.35],
+  				[12.20, 12.26, 12.29, 12.32, 12.35, 12.39, 12.44, 12.49, 12.55],
+				[13.40, 13.46, 13.49, 13.52, 13.55, 13.59, 14.04, 14.09, 14.15],
+  				[15.00, 15.06, 15.09, 15.12, 15.15, 15.19, 15.24, 15.29, 15.35],
+  				[15.40, 15.46, 15.49, 15.52, 15.55, 15.59, 16.04, 16.09, 16.15],
+  				[16.20, 16.26, 16.29, 16.32, 16.35, 16.39, 16.44, 16.49, 16.55],
+  				[17.00, 17.06, 17.09, 17.12, 17.15, 17.19, 17.24, 17.29, 17.35],
+  				[17.40, 17.46, 17.49, 17.52, 17.55, 17.59, 18.04, 18.09, 18.15]
+                ],
+                      [8.20]);
+
+    var highbury = new Bus ("Highbury",[
+                "Depart MST",
+               "Cuba St",
+               "Highbury Ave Monrad Park",
+               "Amberley Ave",
+               "OT Reserve Pembroke St",
+               "Havelock Ave",
+               "Botanical Rd",
+               "Featherston St",
+               "Arrive MST"], [
                       [7.00,7.08,7.11,7.13,7.15,7.19,7.22,7.25,7.35],
                       [7.40,7.48,7.51,7.53,7.55,7.59,8.02,8.05,8.15],
                       [8.20,8.28,8.31,8.33,8.35,8.39,8.42,8.45,8.55],

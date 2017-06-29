@@ -6,8 +6,9 @@
   <style type="text/css">
       button{padding:30px 70px; display:block; width: 300px}
       .container{display:flex}
-      .right{padding-left: 80px;width:50%}
-      .left{width:50%}
+      .middle{width; 33.3%}
+      .right{padding-left: ;width:33.3%}
+      .left{width:33.3%}
       #map {
         height: 500px;
       }
@@ -26,10 +27,13 @@
             <button onclick="awapuni.addContent()">Awapuni</button>
             <button onclick="highbury.addContent()">Highbury</button>
         </div>
+
+          <div class="middle">
+           <h1 id='name'></h1>
+            <h2 id='powers'></h2></div>
         <div class="right">
             <div id=map></div>
-            <h1 id='name'></h1>
-            <h2 id='powers'></h2>
+
             <script>
 
       var map;
